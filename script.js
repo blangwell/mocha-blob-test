@@ -23,7 +23,6 @@ const source = `
       mocha.checkLeaks();
     </script>
     <script src="script.js"></script>
-    <script src="test.script.js"></script>
     <script class="mocha-exec">
       mocha.run();
     </script>
