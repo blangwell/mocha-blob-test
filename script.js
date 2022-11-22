@@ -1,7 +1,7 @@
 const getBlobURL = (code, type) => {
-    const blob = new Blob([code], { type });
-    return URL.createObjectURL(blob);
-}
+  const blob = new Blob([code], { type });
+  return URL.createObjectURL(blob);
+};
 
 const source = `
 <!DOCTYPE html>
@@ -29,8 +29,8 @@ const source = `
     </script>
   </body>
 </html>
-`
+`;
 
-const url = getBlobURL(source, 'text/html');
+const url = getBlobURL(source, "text/html");
 
-document.querySelector('#test-widget').src = url;
+parent.document.querySelector("#test-widget").src = url;
