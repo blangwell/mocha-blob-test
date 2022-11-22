@@ -23,6 +23,19 @@ const source = `
       mocha.checkLeaks();
     </script>
     <script src="script.js"></script>
+    <script>
+    describe("add(a,b)", () => {
+      it("Should return the value of two args added together", () => {
+        chai.assert.equal(add(10, 10), 20);
+      });
+    });
+    
+    describe("subtract(a,b)", () => {
+      it("Should return the result of subracting b from a", () => {
+        chai.assert.equal(subtract(50, 10), 40);
+      });
+    });
+    </script>
     <script class="mocha-exec">
       mocha.run();
     </script>
